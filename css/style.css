@@ -455,7 +455,20 @@ body{
 .login-form input[type="checkbox"]:checked + label::before{
     background: url("../img/sprite.png") no-repeat;
     background-position: -11px -297px;
-    
+}
+/*Map*/
+.modal-content-map{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 766px;
+    height: 561px;
+    margin-left: -390px;
+    margin-top: -287.5px;
+    border: 7px solid #fff;
+    background: #e9e5dc;
+    box-shadow: 0 30px 50px rgba(0,0,0,.7);
 }
 
 
