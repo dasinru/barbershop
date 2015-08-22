@@ -456,7 +456,7 @@ body{
     background: url("../img/sprite.png") no-repeat;
     background-position: -11px -297px;
 }
-/*Map*/
+
 .modal-content-map{
     display: none;
     position: fixed;
@@ -535,17 +535,5 @@ body{
   animation: shake 0.6s;
 }
 
-.modal-content-close {
-  position: absolute;
-  top: -16px;
-  right: -55px;
 
-  width: 40px;
-  height: 40px;
-
-  font-size: 0;
-  cursor: pointer;
-  background: url("../img/sprite.png") no-repeat center;
-  background-position: -5px -1px;
-}
 
