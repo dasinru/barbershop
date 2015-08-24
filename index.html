@@ -75,10 +75,13 @@
           <h2 class="content-column-title">Фотогалерея</h2>
           <div class="gallery">
             <figure class="gallery-content">
-              <img src="img/gallery-photo.jpg" width="286" height="164" alt="">
+              <ul class="bxslider">
+                <li><img src="img/gallery-photo.jpg" width="286" height="164" alt="photo"></li>
+                <li><img src="img/gallery-photo2.jpg" width="286" height="164" alt="photo2"></li>
+                <li><img src="img/gallery-photo4.jpg" width="286" height="164" alt="photo4"></li>
+              </ul>
             </figure>
-            <button class="btn gallery-prev">Назад</button>
-            <button class="btn gallery-next">Вперед</button>
+            
           </div>
         </section>
       </div>
@@ -161,6 +164,23 @@
 
     </div>
 
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/jquery.bxslider.min.js"></script>
+
+    <!-- Slider -->
+    <script>
+      $(document).ready(function(){
+     $('.bxslider').bxSlider({
+      pager: false,
+      mode: 'fade',
+      auto: true,
+      nextText: 'вперед',
+      prevText: 'назад'
+     });
+    });
+
+    </script>
     <!-- Modal login -->
     <script src="js/login.js"></script>
 

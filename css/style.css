@@ -227,10 +227,7 @@ body{
 .btn:disabled:hover{
     background: #000;
 }
-.gallery{
-    position: relative;
-    height: 260px;
-}
+
 .gallery-content{
     height: 164px;
     margin: 0;
@@ -240,18 +237,6 @@ body{
 .gallery-content img{
     width: 286px;
     height: 164px;
-}
-.gallery .btn{
-    position: absolute;
-    bottom: 0;
-    width: 140px;
-    margin: 0;
-}
-.gallery-prev{
-    left: 0;
-}
-.gallery-next{
-    right: 0;
 }
 .index-content p{
     margin: 0;
@@ -534,6 +519,72 @@ body{
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
+
+/*Slider*/
+.gallery-content ul{
+    margin: 0;
+    padding: 0;
+}
+.gallery-content li{
+    list-style: none;
+}
+.bx-controls-direction{
+    position: relative;
+    height: 85px;
+}
+.bx-prev{
+   display: inline-block;
+    vertical-align: top;
+    padding: 10px 33px;
+    font-family: 'pt_sans_narrowregular', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+     
+}
+.bx-next{
+   display: inline-block;
+    vertical-align: top;
+    padding: 10px 33px;
+    font-family: 'pt_sans_narrowregular', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+}
+.bx-prev:hover{
+   background: #663d15;
+} 
+
+.bx-next:hover{
+    background: #663d15;
+}
+
+
+
 
 
 
