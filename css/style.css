@@ -589,6 +589,23 @@ body{
     display: none;
 }
 
+/*Popup*/
+.hidden{
+    display: none;
+}
+#popup{
+    padding: 50px 30px 30px 30px;
+    background: #fff;
+    max-width: 320px;
+    margin: auto;
+    position: relative;
+    color: #000;  
+}
+#popup input{
+    width: 100%;
+    margin-bottom: 10px;
+    color: #000;
+}
 
 
 
