@@ -107,11 +107,11 @@
           <div class="appointment-form">
             <h2 class="content-column-title">Записаться</h2>
             <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-            <form action="/echo" method="post">
+            <form id="form">
               <input type="date" name="date" value="" placeholder="Дата">
               <input type="time" name="time" value="" placeholder="Время">
-              <input type="text" name="name" value="" placeholder="Ваше имя">
-              <input type="tel" name="phone" value="" placeholder="Телефон">
+              <input type="text" name="name" value="" placeholder="Ваше имя*" required>
+              <input type="tel" name="phone" value="" placeholder="Телефон*" required>
               <button type="submit" class="btn">Отправить</button>
             </form>
           </div>
@@ -146,9 +146,9 @@
         <div class="modal-content-close">закрыть</div>
         <h2 class="modal-content-title">Личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
-        <form class="login-form" action="/echo" method="post" >
+        <form class="login-form" >
           <input type="text" class="icon-user" name="login" placeholder="Логин" required>
-          <input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+          <input type="text" class="icon-password" name="password" placeholder="Пароль" required>
           <input type="checkbox" name="remember" id="remember-me">
           <label for="remember-me">Запомните меня</label>
           <a href="#" class="restore">Я забыл пароль!</a>
@@ -166,28 +166,19 @@
 
     <script src="js/jquery-1.11.3.min.js"></script>
 
+    <!-- Slider -->
     <script src="js/jquery.bxslider.min.js"></script>
 
-    <!-- Slider -->
-    <script>
-      $(document).ready(function(){
-     $('.bxslider').bxSlider({
-      pager: false,
-      mode: 'fade',
-      auto: true,
-      nextText: 'вперед',
-      prevText: 'назад'
-     });
-    });
-
-    </script>
     <!-- Modal login -->
     <script src="js/login.js"></script>
 
     <!-- Modal map -->
     <script src="js/map.js"></script>
+
+    <!-- Forms AJAX -->
+
+    <script src="js/forms_ajax.js"></script>
     
     
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>

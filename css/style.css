@@ -582,6 +582,12 @@ body{
 .bx-next:hover{
     background: #663d15;
 }
+.bxslider li:nth-child(2){
+    display: none;
+}
+.bxslider li:nth-child(3){
+    display: none;
+}
 
 
 
